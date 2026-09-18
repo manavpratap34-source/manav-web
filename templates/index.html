@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content="width=device-width,intial-scale=1 .0">
+    <title> My website</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+  <nav> 
+      <h2>My Website</h2>
+
+     <div class=" nav-links">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#skills">Services</a>
+         <a href="#projects">Projects</a>
+         <a href="#contact">Contact</a>
+     </div>
+</nav>
+
+<section class=" hero"i id="Home">
+
+    <div class="hero-text">
+        <p class="small-text">WELCOME TO MY WEBSITE</p>
+
+        <h1>Build Something<br><spam>Amazing</spam></h1>
+
+        <p class="description">
+            This is my first profesional website created using HTML an CSS.
+        </p>
+
+        <button>Get Started</button>
+    </div>
+    <div class="hero-image">
+        <img src="{{url_for('static', filename='image.jpg') }}"alt="My Image">
+    </div>
+</section>
+<section class:about; id="about">
+    <div class="about-text">
+        <p class="small-text">ABOUT ME</p>
+        <h2> I'm learning to<br><span>build for the web.</span></h2>
+        <p>
+            Hello I'm a Computer Science student who is interested in technology, programming and web development.
+        </p>
+        <p>
+            I'm currently learning HTML, CSS and Python and working on building my own projects.
+        </p>
+     </div>
+</div>     
+</section>
+<!-- Skills Section -->
+<section class="skills" id="skills">
+    <div class="skills-heading">
+        <p class="small-text">MY SKILLS</p>
+        <h2> What I'm <span> Learning</span></h2>
+        <p>
+            I'm continuously improving my programming and web development skills.
+        </p>
+    </div>
+    <div class="skills-container">
+        <!-- HTML-->
+         <div class="skill-card">
+            <h3>HTML</h3>
+            <p>web Structure</p>
+            <div class="progress">
+                <div class="progress-bar html"></div>
+            </div>
+            <span>Beginner</span>
+         </div>
+         <!-- CSS-->
+         <div class="skill-card">
+            <h3>CSS</h3>
+            <p>web Design</p>
+            <div class="progress">
+                <div class="progress-bar css"></div>
+            </div>
+            <span> Beginner</span>
+         </div>
+         <!--Python-->
+         <div class="skill-card">
+            <h3> Python</h3>
+            <p>Programming</p>
+            <div class="progress">
+                <div class="progress-bar python"></div>
+            </div>
+            <span>Learning</span>
+        </div>    
+    </div>
+</section>
+<!-- Projects Section-->
+ <section class="projects" id="projects">
+    <div class="projects-heading">
+        <p class="small-text">MY PROJECTS</p>
+        <h2>Things I've<span>Built</span></h2>
+        <p>
+            Here are some of the process I'm working on white learnig web development.
+        </p>
+    </div>
+    <div class="projects-container">
+        <!-- Project 1-->
+         <div class="project-card">
+            <div class="project-number">01</div>
+            <h3>My First Website</h3>
+            <p>
+                A modern personal website created using HTML and CSS. 
+            </p>
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>               
+            </div>
+            <a href="#">View Project</a>
+         </div>
+         <!-- Project 2-->
+          <div class="project-card">
+            <div class="project-number">02</div>
+            <h3>Python Project</h3>
+            <p>
+                A Python project that I will build while learning programming. 
+            </p>
+            <div class="project-tech">
+                <span>Python</span>               
+            </div>
+            <a href="#">View Project</a>
+         </div>
+         <!-- Project 3-->
+          <div class="project-card">
+            <div class="project-number">03</div>
+            <h3>Future Project</h3>
+            <p>
+               A new project that I will create and add to my portfolio. 
+            </p>
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Python</span>               
+            </div>
+            <a href="#">View Project</a>
+         </div>
+    </div>
+ </section>
+ <!-- Contact Section-->
+  <section class=" Contact" id="contact">
+    <div class="contact-heading">
+        <p class="small-text"> CONTACT ME</p>
+        <h2> Lest's <span> Connect</span></h2>
+        <P>
+            Have a question or want to work together ?
+            Send me a message .
+        </P>
+    </div>
+    <form class="contact-form" method="POST">
+        <input type="text"name="name" placeholder=" Your Name"required>
+        <input type="email"name="email" placeholder="Your Email"required>
+        <textarea name="message" placeholder="Your Message"required></textarea>
+        <button type="submit"> Send Message</button>
+    </form>
+  </section>
+  <!-- Footer-->
+   <footer>
+    <h2> MyWEBSITE</h2>
+    <p>
+        Built with HTML and CSS while learning web development.
+    </p>
+    <div class="footer-links">
+        <a href="#home"> Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#conatct">Contact</a>
+    </div>
+    <p class="copyright">
+        2026 Mywebsite. All Rights Reserved.
+    </p>
+   </footer>
+</body>
+</html>
+
+
